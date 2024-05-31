@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Script for Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="container1" id="home">
+        <header>
+            <nav>
+                <div class="left-nav">
+                    <a href="https://www.instagram.com/iesn_cosmos/" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="https://github.com/Iverson00" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </div>
+                <div class="right-nav">
+                    <a href="index1.html">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="mid-info">
+                <div class="name" id="name">Iverson <br>
+                    <span>Culanag</span>
+                </div>
+                <div class="work">Web Developer</div>
+            </div>
+        </section>
+    </div>
+    <section class="sec-des" id="about">
+        <div class="sec-des-left">
+            <h3>About</h3>
+            <p>
+                Hi! I am Iverson Culanag, a 20-year-old student who is a hard-working and driven individual who isn't afraid to face a challenge.
+            </p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>June 21, 2003</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+63 991 388 6654</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Olongapo, Philippines</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>202211400@gordoncollege.edu.ph</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="image/iverson.jpg" alt="A Photo" class="modal-img">
+        </div>
+    </section>
+    <section class="sec-des exp" id="experience">
+        <div class="sec-des-left exp-left">
+            
+            <h3>Experience</h3>
+            <p>
+                I'm a driven novice in front-end programming that is ready to pick up and explore cutting-edge internet technologies with an eye for detail. Finding and utilizing less well-known frontend techniques and instruments to produce enjoyable user experiences excites me.
+            </p>
+        </div>
+        <img src="image/ive.jpg" alt="A Photo Iverson" class="modal-img">
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p class="contact-text">
+            I'm available for freelance work. Feel free to <span class="highlight">reach out</span> to start a conversation.
+        </p>
+        <p class="email">
+            <a href="mailto:iverson.culanag21@gmail.com">iverson.culanag21@gmail.com</a>
+        </p>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="form-name">Name:</label>
+                <input type="text" id="form-name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="form-email">Email:</label>
+                <input type="email" id="form-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="form-message">Message:</label>
+                <textarea id="form-message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <style>
+        .contact {
+            padding: 2em 1em;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 2em auto;
+            max-width: 800px;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            color: #333;
+        }
+        .contact-text {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            color: #555;
+        }
+        .highlight {
+            color: #ff6f61;
+            font-weight: bold;
+        }
+        .email {
+            margin-bottom: 1.5em;
+            font-size: 1.1em;
+        }
+        .email a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 0.2em;
+        }
+        .email a:hover {
+            color: #ff6f61;
+        }
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 1em;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        input:focus, textarea:focus {
+            border-color: #ff6f61;
+        }
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 0.75em;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff6f61;
+            color: #fff;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #e55a50;
+        }
+    </style>
+    
+    
+    <hr>
+    <footer id="footer">
+        <div class="left-nav">
+            <a href="index1.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+    <button id="back-to-top">&#9650;</button>
+
+    <!-- The Modal -->
+    <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgModalContent">
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>

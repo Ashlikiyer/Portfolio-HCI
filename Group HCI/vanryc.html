@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Script for Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        /* Add styles for the back to top button */
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Add styles for image modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: 15% auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .close:hover, .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1" id="home">
+        <header>
+            <nav>
+                <div class="left-nav">
+                    <a href="https://github.com/Vanryc" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </div>
+                <div class="mid-nav">
+                    <!-- Placeholder for any future content in mid-nav -->
+                </div>
+                <div class="right-nav">
+                    <a href="index1.html">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="mid-info">
+                <div class="name" id="name">Vanryc Eizer <br>
+                    <span>Mayor</span>
+                </div>
+                <div class="work">Web Developer</div>
+            </div>
+        </section>
+    </div>
+    <section class="sec-des" id="about">
+        <div class="sec-des-left">
+            <h3>About</h3>
+            <p>
+                My name is Vanryc Eizer Mayor and I live in Mabayuan Olongapo City. I'm a 2nd year college student and
+                pursuing my degree BSCS or Bachelor of Science in Computer Science in Gordon College. 
+            </p>
+        </div>
+        <img src="image/vanr.jpg" alt="A Photo of Nightshade" class="modal-img">
+    </section>
+    <section class="sec-des exp" id="experience">
+        <div class="sec-des-left exp-left">
+            <h3>Experience</h3>
+            <p>
+                My experience in coding is not good enough. I did some projects together with my blockmates
+                here in college. I'm studying more about coding so that my knowledge in coding
+                becomes better in the near future. I'm not great but I'm learning.
+            </p>
+        </div>
+        <img src="image/vanryc.jpg" alt="A Photo of Nightshade" class="modal-img">
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p class="contact-text1">
+            Get in touch to start a <span class="free">free consultation</span>.
+        </p>
+        <p class="email">
+            vanryc@example.com
+        </p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="form-name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="form-email" name="email" required><br>
+            <label for="message">Message:</label>
+            <textarea id="form-message" name="message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <hr>
+    <footer id="footer">
+        <div class="left-nav">
+            <a href="index1.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
+       
+    </footer>
+    <button id="back-to-top">Top</button>
+
+    <!-- The Modal -->
+    <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgModalContent">
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
